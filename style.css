@@ -1,3 +1,43 @@
-/* body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Serif+Georgian:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: Georgia, montserrat, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #151618;
+    --darkgrey: #7c7d7f;
+    --grey: #97999b;
+    --lightgrey: #ebecec;
+    --purple: #9105ed;
+    --darkpurple: #4300c5;
+    --burntyellow: #a85d19;
+    --deepyellow: #dd8614;
+    --lightyellow: #e7e986;
+}
+
+.main-container {
+    width: 100vw;
     background-color: aqua;
-} */
+}
+
+.content {
+    width: 1380px;
+    background-color: #e7e986;
+    margin: auto;
+    display: flex;
+}
+
+.first {
+    display: flex;
+}
+
+.first img {
+    width: 90px;
+    cursor: pointer;
+}
+
