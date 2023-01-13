@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
-    font-family: poppins, Georgia, sans-serif;
+    font-family: poppins, sans-serif;
     font-size: 18px;
     box-sizing: border-box;
     margin: 0;
@@ -74,15 +74,12 @@
   }
 
   .search {
-    max-width: none;
-    flex-shrink: inherit;
-    /* box-sizing: border-box; */
-    /* width: 100%; */
+    max-width: 580px;
+    min-width: 300px;
+    width: 100%;
   }
 
   .search form {
-    /* width: 500px; */
-    /* flex-grow: 1; */
     margin: auto;
     border: 1px solid var(--darkgrey);
     display: flex;
@@ -100,22 +97,24 @@
     color: var(--darkgrey);
     padding-right: 15px;
     cursor: pointer;
+    position: absolute;
   }
 
   .fa-magnifying-glass {
     font-size: 0.8rem;
+    left: 15px;
   }
 
   form input {
-    width: 550px;
+    width: 100%;
+    width: 100%;
     border: none;
     font-size: 0.7rem;
     padding: 7px 0;
+    margin-left: 25px;
     margin-right: 20px;
     background: none;
-    box-sizing: border-box;
     width: none;
-    background-color: #e7e986;
   }
 
   form input:focus {
@@ -192,11 +191,6 @@
     background-color: var(--lightgrey);
   }
 
-  /* Header ends here */
-
-  /* Body starts here, banner images */
-
-  /* Slideshow container */
 .slideshow-container {
     max-width: 1340px;
     position: relative;
@@ -240,8 +234,7 @@
     background-color: #717171;
   }
   
-  /* Fading animation */
-  /* .fade {
+  .fade {
     animation-name: none;
     animation-duration: 750ms;
     animation-delay: 10s;
@@ -249,12 +242,12 @@
     animation-duration: 10s;
     animation-direction: normal;
     animation-delay: 1000s;
-  } */
+  }
   
-  /* @keyframes fade {
+  @keyframes fade {
     from {left: -1000px;}
     to {right: 1000px}
-  } */
+  }
 
 .info {
     max-width: 440px;
@@ -347,8 +340,6 @@
   line-height: 1.2rem;
 }
 
-/* start from here */
-
 .course-content button {
   font-size: 0.7rem;
   font-weight: 700;
@@ -366,11 +357,6 @@
 .carousel-container {
   position: relative;
 }
-/* @media (max-width: 768px) {
-  .carousel-container {
-    width: 95%;
-  }
-} */
 
 .inner-carousel {
   width: 100%;
@@ -388,12 +374,6 @@
   flex-shrink: 0;
   padding-right: 10px;
 }
-
-/* @media (max-width: 768px) {
-  .card-container {
-    width: 184px;
-  }
-} */
 
 .card-container img {
   width: 100%;
@@ -502,7 +482,6 @@ label {
   display: none;
 }
 
-/* Go back here */
 .testimonials {
   background-color:  var(--lightgrey);
 }
@@ -519,7 +498,6 @@ label {
 
 .carousel3 {
   position: relative;
-  background-color: #4300c5;
 }
 
 .inner-div {
@@ -534,13 +512,84 @@ label {
 }
 
 .testimony {
-  width: 389px;
+  width: 400px;
   height: 331px;
   margin-right: 20px;
   background-color: white;
   border: 1px solid var(--grey);
-
 }
+
+.testimony-div {
+  padding: 20px;
+}
+
+.testimony-inner-div {
+  height: 150px;
+}
+
+.testimony-inner-div h5 {
+  font-family: georgia, sans-serif;
+  font-size: 3rem;
+}
+
+.testimony-inner-div p, .testimony-inner-div p b {
+  font-size: 0.8rem;
+  margin-top: 0;
+  line-height: 1.2rem;
+  margin-top: -20px;
+}
+
+.name {
+  display: flex;
+  margin-top: 15px;
+}
+
+.name h4 {
+  background-color: var(--black);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  text-align: center;
+  padding-top: 7px;
+  color: white;
+}
+
+.name h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+hr {
+  color: var(--lightgrey);
+  margin-top: 20px;
+}
+
+.foot-info {
+  display: flex;
+  cursor: pointer;
+  margin-top: 15px;
+} 
+
+.fa-circle-play {
+  font-size: 1.9rem;
+  color: var(--purple);
+  padding-right: 10px;
+}
+
+.div2 a {
+  text-decoration: none;
+}
+
+.div2 h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+
 
 .four {
   margin-right: 0;
@@ -550,7 +599,19 @@ label {
   width: 260px;
 }
 
-/* Go back here up */
+.track2 .nav button {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translatey(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--black);
+  cursor: pointer;
+  z-index: 1000;
+}
 
 .students .card-container h4 {
   padding-top: 10px;
@@ -585,12 +646,13 @@ label {
   background-color: var(--lightgrey);
   width: 300px;
   height: 310px;
+  margin-bottom: 50px;
 }
 
 .div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -747,6 +809,10 @@ label {
   margin-bottom: 30px;
 }
 
+.udemy-biz {
+  flex-direction: row-reverse;
+}
+
 .center .one {
   width: 400px;
 }
@@ -763,8 +829,9 @@ label {
 
 .biz-content span {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   position: absolute;
+  color: var(--purple);
 }
 
 .biz-content p {
@@ -823,7 +890,7 @@ footer {
   border: solid white 1px;
 }
 
-.fa-globe {
+.site .fa-globe {
   color: white;
   background-color: var(--black);
 }
